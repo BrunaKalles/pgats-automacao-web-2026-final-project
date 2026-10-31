@@ -6,6 +6,7 @@ module.exports = defineConfig({
     charts: true,
     embeddedScreenshots: true,
     inlineAssets: true,
+    overwrite: false,
     reportDir: "cypress/reports/mochawesome",
   },
   e2e: {

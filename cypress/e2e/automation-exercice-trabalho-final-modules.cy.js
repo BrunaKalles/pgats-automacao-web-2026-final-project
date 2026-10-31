@@ -148,8 +148,6 @@ describe('Automation Exercise', () => {
     pagamento.verificarSeOPedidoFoiConfirmado()
 
   });
-});
-
   it('16 - Fazer pedido: Faça login antes de finalizar a compra',()=>{
       
     cy.visit('/')
@@ -182,5 +180,8 @@ describe('Automation Exercise', () => {
   
     pagamento.verificarSeOPedidoFoiConfirmado()
  
+  });
 });
+
+ 
 
