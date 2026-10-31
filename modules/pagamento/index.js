@@ -19,9 +19,13 @@ function preencherPagamento(){
 
 }
 function verificarSeOPedidoFoiConfirmado() {
-   cy.contains('Order Placed!')
-    .should('be.visible')
-  }
+  cy.location('pathname').should((pathname) => {
+    expect(
+      pathname,
+      'Your order has been placed successfully!'
+    ).to.include('/payment_done/')
+  })
+}
 
 
 
