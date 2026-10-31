@@ -19,7 +19,7 @@ function preencherPagamento(){
 
 }
 function verificarSeOPedidoFoiConfirmado() {
-   cy.contains('Your order has been placed successfully!')
+   cy.contains('Order Placed!')
     .should('be.visible')
   }
 
